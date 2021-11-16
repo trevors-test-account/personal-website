@@ -5,7 +5,7 @@
 
 // Import for react font awesome icons ----------------
 // -- view icon library here => https://react-icons.github.io/react-icons/icons?name=fa
-  import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt } from "react-icons/fa";
+  import { FaGithub, FaLinkedin, FaEnvelope, FaFileAlt, FaBtc, FaTwitter } from "react-icons/fa";
 // ----------------------------------------------------
 
 //Import images for project cards here ----------------
@@ -13,35 +13,35 @@
   import recrootBox from "../public/images/recrootBox_site.png";
   import currence   from "../public/images/currence.png"
   import keyboard   from "../public/images/keyboard.png"
+  import sloth      from "../public/images/sloth.png"
 // ----------------------------------------------------
 
 // Import selfie here ---------------------------------
 // -- Selfie should be square (e.g. 300 X 300 px)
-  import selfie     from "../public/images/trevor.png"
+  import selfie     from "../public/images/puppy.png"
 // ----------------------------------------------------
 
 // Google Analytics Tracking ID -----------------------
-  const googleAnalyticsId = "UA-69073529-2"
+  const googleAnalyticsId = null
 // ----------------------------------------------------
 
 
 // Edit Call To Action Button -------------------------
-  let callToActionTitle = "Blog";
-  let callToActionLink = "https://blog.trevorlane.dev"
-  let renderCallToAction = true;
+  let callToActionTitle = "All about dogs!";
+  let callToActionLink = "https://en.wikipedia.org/wiki/Dogv"
+  let renderCallToAction =  true;
 // ----------------------------------------------------
 
 // Background color for project cards -----------------
-  let accent = "#003344"
+  let accent = "#7a202c"
 // ----------------------------------------------------
 
 // Edit person info here ------------------------------
 // -- Bio is best kept to around 5 lines
-  let firstName = "Trevor";
-  let lastName = "Lane";
-  let title = "Software Engineer";
-  let bio = `Currently enjoying life as a husband and father. During the day I work as a software engineer at Breeze Aviation.
-  Feel free to check out some of my past projects below, browse some code on my github profile, or just reach out to say hi!`;
+  let firstName = "Dog";
+  let lastName = "Woofer";
+  let title = "Pro Barker";
+  let bio = `Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof Woof woof woof woof woof `;
 // ----------------------------------------------------
 
 
@@ -56,7 +56,7 @@
     {
       name: "Email",
       link: "mailto:trevor@trevorlane.net",
-      icon: FaEnvelope
+      icon: FaBtc 
     },
     {
       name: "GitHub",
@@ -65,15 +65,15 @@
 
     },
     {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/hi-there-trevor-here/",
-      icon: FaLinkedin
-
-    },
-    {
       name: "Resume",
       link: '/assets/Resume.pdf',
       icon: FaFileAlt
+    },
+    {
+      name: "Twitter",
+      link: 'https://twitter.com/hiTrevorHere',
+      icon: FaTwitter
+      
     }
   ];
 // ----------------------------------------------------
@@ -85,15 +85,59 @@
   let projectSectionTitle = "Recent Projects"
   let projectCardData = [
     {
-      imageUrl: recrootBox,
-      title: "Recroot Box",
-      description: "Easy to user porfolio-site template",
-      link: "https://github.com/trevorhere/recrootBox/",
+      imageUrl: sloth,
+      title: "Sloths Are Great",
+      description: "But they are slow",
+      link: "https://en.wikipedia.org/wiki/Sloth",
       links: [{
-        title: "Live",
-        link: "https://github.com/trevorhere/recrootBox/",
+        title: "Sloth Toys",
+        link: "https://www.amazon.com/sloth-toys/s?k=sloth+toys",
       }],
-      tags: ["react.js", "next.js", "tailwind", "netlify"]
+      tags: ["sloth", "toy", "slow"]
+    },
+    {
+      imageUrl: sloth,
+      title: "Sloths Are Great",
+      description: "But they are slow",
+      link: "https://en.wikipedia.org/wiki/Sloth",
+      links: [{
+        title: "Sloth Toys",
+        link: "https://www.amazon.com/sloth-toys/s?k=sloth+toys",
+      }],
+      tags: ["sloth", "toy", "slow"]
+    },
+    {
+      imageUrl: sloth,
+      title: "Sloths Are Great",
+      description: "But they are slow",
+      link: "https://en.wikipedia.org/wiki/Sloth",
+      links: [{
+        title: "Sloth Toys",
+        link: "https://www.amazon.com/sloth-toys/s?k=sloth+toys",
+      }],
+      tags: ["sloth", "toy", "slow"]
+    },
+    {
+      imageUrl: sloth,
+      title: "Sloths Are Great",
+      description: "But they are slow",
+      link: "https://en.wikipedia.org/wiki/Sloth",
+      links: [{
+        title: "Sloth Toys",
+        link: "https://www.amazon.com/sloth-toys/s?k=sloth+toys",
+      }],
+      tags: ["sloth", "toy", "slow"]
+    },
+    {
+      imageUrl: sloth,
+      title: "Sloths Are Great",
+      description: "But they are slow",
+      link: "https://en.wikipedia.org/wiki/Sloth",
+      links: [{
+        title: "Sloth Toys",
+        link: "https://www.amazon.com/sloth-toys/s?k=sloth+toys",
+      }],
+      tags: ["sloth", "toy", "slow"]
     },
     {
       imageUrl: currence,
@@ -119,6 +163,16 @@
           title: "Post",
           link: "/post/keyboardBuild",
         }]
+    },
+    {
+      imageUrl: sloth,
+      tags: ['sloths','blog'],
+      title: "A Cool Post About Sloths",
+      description: "Sloths are a group of arboreal Neotropical xenarthran mammals",
+      links: [{
+          title: "My Post",
+          link: "/post/slothBlogPost",
+        }]
     }
   ];
 // ----------------------------------------------------
@@ -127,6 +181,7 @@
 // Post content imports here --------------------------
 // markdown  guide => https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
   import {keyboardPostText} from './posts/keyboard_build'
+  import {slothBlogPostText} from './posts/slothBlogPost.js'
 // ----------------------------------------------------
 
 // Add blog post data here -----------------------------
@@ -145,7 +200,24 @@
       name: "Trevor Lane",
       imageUrl: "https://avatars.githubusercontent.com/u/15148900"
     }
-  }]
+  },
+   {
+    id: "slothBlogPost",
+    tags: ['sloth', 'cool'],
+    dateTime: "test",
+    date: "11/15/1985",
+    readingTime: "50 min",
+    title: "A Cool Post About Sloths",
+    content: slothBlogPostText,
+    href: "https://i.imgur.com/ZLe9N4s.png",
+    author: {
+      href: "https://twitter.com/hiTrevorHere",
+      name: "Dog Woofer",
+      imageUrl: "https://avatars.githubusercontent.com/u/64881350?s=400&u=d8af5e4738888d61888b2b04cbbb84039af90aff&v=4"
+    }
+  }
+  
+  ]
 // ----------------------------------------------------
    
 
